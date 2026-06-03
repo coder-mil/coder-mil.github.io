@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> coder-mil </title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background: #0d1117;
+      color: #e6edf3;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background:
+        radial-gradient(ellipse at 20% 20%, rgba(88,166,255,0.08) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 80%, rgba(139,92,246,0.08) 0%, transparent 50%);
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    .avatar {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #58a6ff, #8b5cf6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 0 40px rgba(88,166,255,0.25);
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 0.25rem;
+      letter-spacing: -0.02em;
+    }
+
+    .username {
+      font-size: 1rem;
+      color: #58a6ff;
+      margin-bottom: 1.5rem;
+    }
+
+    .bio {
+      max-width: 480px;
+      line-height: 1.6;
+      color: #8b949e;
+      margin-bottom: 2rem;
+    }
+
+    .links {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .links a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.6rem 1.2rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: all 0.2s ease;
+    }
+
+    .links a.primary {
+      background: linear-gradient(135deg, #58a6ff, #8b5cf6);
+      color: #fff;
+    }
+
+    .links a.primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 20px rgba(88,166,255,0.35);
+    }
+
+    .links a.secondary {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      color: #e6edf3;
+    }
+
+    .links a.secondary:hover {
+      background: rgba(255,255,255,0.1);
+      transform: translateY(-2px);
+    }
+
+    .status {
+      margin-top: 3rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.8rem;
+      color: #3fb950;
+    }
+
+    .status::before {
+      content: '';
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #3fb950;
+      box-shadow: 0 0 8px #3fb950;
+      animation: pulse 2s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+
+    .footer {
+      margin-top: 4rem;
+      font-size: 0.75rem;
+      color: #484f58;
+    }
+
+    .footer a { color: #484f58; text-decoration: none; }
+    .footer a:hover { color: #8b949e; }
+  </style>
+</head>
+<body>
+
+  <div class="avatar">CM</div>
+  <h1> Mauricio Milano </h1>
+  <div class="username">@coder-mil</div>
+  <p class="bio">
+    Desenvolvedor full-stack · Autodidata · Construindo coisas interesting
+    no Brasil 🇧🇷
+  </p>
+
+  <div class="links">
+    <a href="https://github.com/coder-mil" class="primary" target="_blank">
+      GitHub
+    </a>
+    <a href="https://server.mauriciomilano.com" class="secondary" target="_blank">
+      Servidor
+    </a>
+    <a href="https://github.com/coder-mil/psi-crm" class="secondary" target="_blank">
+      psi-crm
+    </a>
+  </div>
+
+  <div class="status">online</div>
+
+  <div class="footer">
+    Feito com ☕ e Terminal
+  </div>
+
+</body>
+</html>
